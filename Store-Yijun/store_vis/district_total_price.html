@@ -1,0 +1,1374 @@
+<div style="width:100%;"><div style="position:relative;width:100%;height:0;padding-bottom:60%;"><span style="color:#565656">Make this Notebook Trusted to load map: File -> Trust Notebook</span><iframe srcdoc="&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    
+    &lt;meta http-equiv=&quot;content-type&quot; content=&quot;text/html; charset=UTF-8&quot; /&gt;
+    
+        &lt;script&gt;
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        &lt;/script&gt;
+    
+    &lt;style&gt;html, body {width: 100%;height: 100%;margin: 0;padding: 0;}&lt;/style&gt;
+    &lt;style&gt;#map {position:absolute;top:0;bottom:0;right:0;left:0;}&lt;/style&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://code.jquery.com/jquery-3.7.1.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js&quot;&gt;&lt;/script&gt;
+    &lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js&quot;&gt;&lt;/script&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css&quot;/&gt;
+    &lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css&quot;/&gt;
+    
+            &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no&quot; /&gt;
+            &lt;style&gt;
+                #map_88f3817a847825919d6786e34dac8f5b {
+                    position: relative;
+                    width: 800.0px;
+                    height: 600.0px;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            &lt;/style&gt;
+        
+&lt;/head&gt;
+&lt;body&gt;
+    
+    
+            &lt;div class=&quot;folium-map&quot; id=&quot;map_88f3817a847825919d6786e34dac8f5b&quot; &gt;&lt;/div&gt;
+        
+&lt;/body&gt;
+&lt;script&gt;
+    
+    
+            var map_88f3817a847825919d6786e34dac8f5b = L.map(
+                &quot;map_88f3817a847825919d6786e34dac8f5b&quot;,
+                {
+                    center: [23.90791148225806, 90.10312338709676],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9c399f8bd763dfbfec7604903e8190da = L.tileLayer(
+                &quot;https://tile.openstreetmap.org/{z}/{x}/{y}.png&quot;,
+                {&quot;attribution&quot;: &quot;\u0026copy; \u003ca href=\&quot;https://www.openstreetmap.org/copyright\&quot;\u003eOpenStreetMap\u003c/a\u003e contributors&quot;, &quot;detectRetina&quot;: false, &quot;maxNativeZoom&quot;: 19, &quot;maxZoom&quot;: 19, &quot;minZoom&quot;: 0, &quot;noWrap&quot;: false, &quot;opacity&quot;: 1, &quot;subdomains&quot;: &quot;abc&quot;, &quot;tms&quot;: false}
+            );
+        
+    
+            tile_layer_9c399f8bd763dfbfec7604903e8190da.addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+            var circle_marker_62c56d69b647948c9b9b0803e763f785 = L.circleMarker(
+                [22.6551705, 89.7779774],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 4.358836666666667, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_50080bcb84a96b5d4b82905c203bd36d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_4a75480ca18681e35e5c5c07a2ee9bc0 = $(`&lt;div id=&quot;html_4a75480ca18681e35e5c5c07a2ee9bc0&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;BAGERHAT  total price: 1307651.0 &lt;/div&gt;`)[0];
+                popup_50080bcb84a96b5d4b82905c203bd36d.setContent(html_4a75480ca18681e35e5c5c07a2ee9bc0);
+            
+        
+
+        circle_marker_62c56d69b647948c9b9b0803e763f785.bindPopup(popup_50080bcb84a96b5d4b82905c203bd36d)
+        ;
+
+        
+    
+    
+            var circle_marker_72b4e49384d597e0fe34b0103460b9bc = L.circleMarker(
+                [22.196146, 92.2175885],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3.3178691666666666, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_c9d3f9a71e03fb1fb87af7915d367fe5 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_eabf5916c4e30fd4889b3f704c144d9a = $(`&lt;div id=&quot;html_eabf5916c4e30fd4889b3f704c144d9a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;BANDARBAN  total price: 995360.75 &lt;/div&gt;`)[0];
+                popup_c9d3f9a71e03fb1fb87af7915d367fe5.setContent(html_eabf5916c4e30fd4889b3f704c144d9a);
+            
+        
+
+        circle_marker_72b4e49384d597e0fe34b0103460b9bc.bindPopup(popup_c9d3f9a71e03fb1fb87af7915d367fe5)
+        ;
+
+        
+    
+    
+            var circle_marker_982a70ab1efdabe35d7adcf474a9a5b3 = L.circleMarker(
+                [22.1605051, 90.1200636],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.896803333333333, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_d9cb1071c49293af54c67baf6af966fd = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_d8ba1db79573c6208deae84070cd762c = $(`&lt;div id=&quot;html_d8ba1db79573c6208deae84070cd762c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;BARGUNA  total price: 869041.0 &lt;/div&gt;`)[0];
+                popup_d9cb1071c49293af54c67baf6af966fd.setContent(html_d8ba1db79573c6208deae84070cd762c);
+            
+        
+
+        circle_marker_982a70ab1efdabe35d7adcf474a9a5b3.bindPopup(popup_d9cb1071c49293af54c67baf6af966fd)
+        ;
+
+        
+    
+    
+            var circle_marker_259b35ae6eccbfabce3293620d0cb38b = L.circleMarker(
+                [22.7132876, 90.3496278],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 9.657459166666667, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_53882ea023a09f07c1b07ce6972fba8b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_59e6abd6d0b35a2b7ba19712eae51ff9 = $(`&lt;div id=&quot;html_59e6abd6d0b35a2b7ba19712eae51ff9&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;BARISAL  total price: 2897237.75 &lt;/div&gt;`)[0];
+                popup_53882ea023a09f07c1b07ce6972fba8b.setContent(html_59e6abd6d0b35a2b7ba19712eae51ff9);
+            
+        
+
+        circle_marker_259b35ae6eccbfabce3293620d0cb38b.bindPopup(popup_53882ea023a09f07c1b07ce6972fba8b)
+        ;
+
+        
+    
+    
+            var circle_marker_260e2a2f862ce44fe533be486abd8079 = L.circleMarker(
+                [22.1785315, 90.7101023],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3.374019166666667, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_43a24956ce83e842a327a39851f82757 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_039fac034861c0e6a54e0b2f1abef72d = $(`&lt;div id=&quot;html_039fac034861c0e6a54e0b2f1abef72d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;BHOLA  total price: 1012205.75 &lt;/div&gt;`)[0];
+                popup_43a24956ce83e842a327a39851f82757.setContent(html_039fac034861c0e6a54e0b2f1abef72d);
+            
+        
+
+        circle_marker_260e2a2f862ce44fe533be486abd8079.bindPopup(popup_43a24956ce83e842a327a39851f82757)
+        ;
+
+        
+    
+    
+            var circle_marker_5edcb9642bc383f5ca948afdee9696d4 = L.circleMarker(
+                [24.8525537, 89.3730275],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5.721509166666666, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_b0a6692e128795d96ce4eb2128cdc211 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_d12950f2e1b1195fd593b9ef7be326e1 = $(`&lt;div id=&quot;html_d12950f2e1b1195fd593b9ef7be326e1&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;BOGRA  total price: 1716452.75 &lt;/div&gt;`)[0];
+                popup_b0a6692e128795d96ce4eb2128cdc211.setContent(html_d12950f2e1b1195fd593b9ef7be326e1);
+            
+        
+
+        circle_marker_5edcb9642bc383f5ca948afdee9696d4.bindPopup(popup_b0a6692e128795d96ce4eb2128cdc211)
+        ;
+
+        
+    
+    
+            var circle_marker_7d06aa5d66e24c16219db5c3e4c85442 = L.circleMarker(
+                [23.9969967, 91.1092952],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 4.4274475, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_efb88e9cc74c645af2c15fe3599e40aa = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_776ae31bbee54c93ba8ceab55d1f698b = $(`&lt;div id=&quot;html_776ae31bbee54c93ba8ceab55d1f698b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;BRAHMANBARIA  total price: 1328234.25 &lt;/div&gt;`)[0];
+                popup_efb88e9cc74c645af2c15fe3599e40aa.setContent(html_776ae31bbee54c93ba8ceab55d1f698b);
+            
+        
+
+        circle_marker_7d06aa5d66e24c16219db5c3e4c85442.bindPopup(popup_efb88e9cc74c645af2c15fe3599e40aa)
+        ;
+
+        
+    
+    
+            var circle_marker_a83771278860fc84fc1b52a9c7a3c946 = L.circleMarker(
+                [23.2250228, 90.6547361],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3.8442558333333334, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_9424cc45179cc98579ee8a886bed0288 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_2ad8432334bfa673f748a36edcc466fb = $(`&lt;div id=&quot;html_2ad8432334bfa673f748a36edcc466fb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;CHANDPUR  total price: 1153276.75 &lt;/div&gt;`)[0];
+                popup_9424cc45179cc98579ee8a886bed0288.setContent(html_2ad8432334bfa673f748a36edcc466fb);
+            
+        
+
+        circle_marker_a83771278860fc84fc1b52a9c7a3c946.bindPopup(popup_9424cc45179cc98579ee8a886bed0288)
+        ;
+
+        
+    
+    
+            var circle_marker_128995d81c171592b1dd6c64a3591e31 = L.circleMarker(
+                [24.5925382, 88.2705204],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.464825, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_847bcccc7f944b12dbc15b4b89ba05a3 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_37a6a266a085bb1e2e8c97b203811d6d = $(`&lt;div id=&quot;html_37a6a266a085bb1e2e8c97b203811d6d&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;CHAPAI NABABGANJ  total price: 739447.5 &lt;/div&gt;`)[0];
+                popup_847bcccc7f944b12dbc15b4b89ba05a3.setContent(html_37a6a266a085bb1e2e8c97b203811d6d);
+            
+        
+
+        circle_marker_128995d81c171592b1dd6c64a3591e31.bindPopup(popup_847bcccc7f944b12dbc15b4b89ba05a3)
+        ;
+
+        
+    
+    
+            var circle_marker_182917fa71e8c10bb161a89c6be74b2a = L.circleMarker(
+                [22.3752075, 91.8348606],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 24.309951666666667, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_d91b665ef84945a70eae96822477a961 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_e0526344a4082736711fc54e1ad3a2b7 = $(`&lt;div id=&quot;html_e0526344a4082736711fc54e1ad3a2b7&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;CHITTAGONG  total price: 7292985.5 &lt;/div&gt;`)[0];
+                popup_d91b665ef84945a70eae96822477a961.setContent(html_e0526344a4082736711fc54e1ad3a2b7);
+            
+        
+
+        circle_marker_182917fa71e8c10bb161a89c6be74b2a.bindPopup(popup_d91b665ef84945a70eae96822477a961)
+        ;
+
+        
+    
+    
+            var circle_marker_876f81926f6b5674bf1726f8ea9f4b9c = L.circleMarker(
+                [23.6316096, 88.8480901],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 1.8796991666666667, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_bcf334ea24212fe79ac7c0db68b4350d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_51f3787c21d2b9f7692d2ebde974742e = $(`&lt;div id=&quot;html_51f3787c21d2b9f7692d2ebde974742e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;CHUADANGA  total price: 563909.75 &lt;/div&gt;`)[0];
+                popup_bcf334ea24212fe79ac7c0db68b4350d.setContent(html_51f3787c21d2b9f7692d2ebde974742e);
+            
+        
+
+        circle_marker_876f81926f6b5674bf1726f8ea9f4b9c.bindPopup(popup_bcf334ea24212fe79ac7c0db68b4350d)
+        ;
+
+        
+    
+    
+            var circle_marker_e0ed79eab2a439343b8bcf50b061ceef = L.circleMarker(
+                [23.4498326, 91.1846622],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 7.6229941666666665, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_61395652544fa32a8db0dada79d16340 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_ec9716ecac4e2329faea015c7ed7c0fb = $(`&lt;div id=&quot;html_ec9716ecac4e2329faea015c7ed7c0fb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;COMILLA  total price: 2286898.25 &lt;/div&gt;`)[0];
+                popup_61395652544fa32a8db0dada79d16340.setContent(html_ec9716ecac4e2329faea015c7ed7c0fb);
+            
+        
+
+        circle_marker_e0ed79eab2a439343b8bcf50b061ceef.bindPopup(popup_61395652544fa32a8db0dada79d16340)
+        ;
+
+        
+    
+    
+            var circle_marker_5c077154c45611cd6c03b6dfd4e6907a = L.circleMarker(
+                [21.4272184, 92.0061058],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3.9604291666666667, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_5a1dd4598cb574b2a23ada78ff9d4bce = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_ed6504259047c76b5297f498fcf685c8 = $(`&lt;div id=&quot;html_ed6504259047c76b5297f498fcf685c8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;COX&#x27;S BAZAR  total price: 1188128.75 &lt;/div&gt;`)[0];
+                popup_5a1dd4598cb574b2a23ada78ff9d4bce.setContent(html_ed6504259047c76b5297f498fcf685c8);
+            
+        
+
+        circle_marker_5c077154c45611cd6c03b6dfd4e6907a.bindPopup(popup_5a1dd4598cb574b2a23ada78ff9d4bce)
+        ;
+
+        
+    
+    
+            var circle_marker_a96045c5cd47a328e655a65249aa9a4f = L.circleMarker(
+                [23.804093, 90.4152376],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 78.65873666666667, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_c3e32aac635d4c12079ece3073e2ac65 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_460ee92b4eb9763bb404a749c5476f06 = $(`&lt;div id=&quot;html_460ee92b4eb9763bb404a749c5476f06&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;DHAKA  total price: 23597621.0 &lt;/div&gt;`)[0];
+                popup_c3e32aac635d4c12079ece3073e2ac65.setContent(html_460ee92b4eb9763bb404a749c5476f06);
+            
+        
+
+        circle_marker_a96045c5cd47a328e655a65249aa9a4f.bindPopup(popup_c3e32aac635d4c12079ece3073e2ac65)
+        ;
+
+        
+    
+    
+            var circle_marker_dbbd871c35bfae094d943065ec4bd96a = L.circleMarker(
+                [25.6221484, 88.6437963],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6.2366858333333335, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_21857cc888c3788d7f4f36985bdc92ea = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_0636c80dcf69e5f7e5570e81bc848410 = $(`&lt;div id=&quot;html_0636c80dcf69e5f7e5570e81bc848410&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;DINAJPUR  total price: 1871005.75 &lt;/div&gt;`)[0];
+                popup_21857cc888c3788d7f4f36985bdc92ea.setContent(html_0636c80dcf69e5f7e5570e81bc848410);
+            
+        
+
+        circle_marker_dbbd871c35bfae094d943065ec4bd96a.bindPopup(popup_21857cc888c3788d7f4f36985bdc92ea)
+        ;
+
+        
+    
+    
+            var circle_marker_810d4e41ab835c31af7bf91be6f17e02 = L.circleMarker(
+                [23.6057352, 89.8386531],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 4.2912791666666665, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_46f3b809b3108e8c5f29d885c6aae07d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_bee5413a8dbf700c7df5f13469d47cdb = $(`&lt;div id=&quot;html_bee5413a8dbf700c7df5f13469d47cdb&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;FARIDPUR  total price: 1287383.75 &lt;/div&gt;`)[0];
+                popup_46f3b809b3108e8c5f29d885c6aae07d.setContent(html_bee5413a8dbf700c7df5f13469d47cdb);
+            
+        
+
+        circle_marker_810d4e41ab835c31af7bf91be6f17e02.bindPopup(popup_46f3b809b3108e8c5f29d885c6aae07d)
+        ;
+
+        
+    
+    
+            var circle_marker_9a3c051fea933c59e119deb102c42165 = L.circleMarker(
+                [23.0128119, 91.3965095],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.826245, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_d516356b6601c83b897bc6fe3c2e2d63 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_fccae0dcc0360bc794bf1ee6d9af3a11 = $(`&lt;div id=&quot;html_fccae0dcc0360bc794bf1ee6d9af3a11&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;FENI  total price: 847873.5 &lt;/div&gt;`)[0];
+                popup_d516356b6601c83b897bc6fe3c2e2d63.setContent(html_fccae0dcc0360bc794bf1ee6d9af3a11);
+            
+        
+
+        circle_marker_9a3c051fea933c59e119deb102c42165.bindPopup(popup_d516356b6601c83b897bc6fe3c2e2d63)
+        ;
+
+        
+    
+    
+            var circle_marker_9e343c74b03703cc930a6ac32ef23627 = L.circleMarker(
+                [25.328978, 89.5415074],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3.3235925, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_70b10356b2261638026d511d3b4bd3a3 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_b2f74c491fa772b669d02eb81b6b6c80 = $(`&lt;div id=&quot;html_b2f74c491fa772b669d02eb81b6b6c80&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;GAIBANDHA  total price: 997077.75 &lt;/div&gt;`)[0];
+                popup_70b10356b2261638026d511d3b4bd3a3.setContent(html_b2f74c491fa772b669d02eb81b6b6c80);
+            
+        
+
+        circle_marker_9e343c74b03703cc930a6ac32ef23627.bindPopup(popup_70b10356b2261638026d511d3b4bd3a3)
+        ;
+
+        
+    
+    
+            var circle_marker_d648bffe87952745674937a4ad1d4c74 = L.circleMarker(
+                [23.9905079, 90.3877184],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.4076208333333335, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_5d1bb8526aaec7a6ee9e1781edd794e2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_fbfef69193c5bfba9cd6bbc2092edadf = $(`&lt;div id=&quot;html_fbfef69193c5bfba9cd6bbc2092edadf&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;GAZIPUR  total price: 722286.25 &lt;/div&gt;`)[0];
+                popup_5d1bb8526aaec7a6ee9e1781edd794e2.setContent(html_fbfef69193c5bfba9cd6bbc2092edadf);
+            
+        
+
+        circle_marker_d648bffe87952745674937a4ad1d4c74.bindPopup(popup_5d1bb8526aaec7a6ee9e1781edd794e2)
+        ;
+
+        
+    
+    
+            var circle_marker_eddaab3fb314cf23847f78bec37a6333 = L.circleMarker(
+                [24.3896201, 91.4126221],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3.84666, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_a848c7ff482b82f0635560f8d68a2233 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_c76266a9d062e567ba94cb448c658875 = $(`&lt;div id=&quot;html_c76266a9d062e567ba94cb448c658875&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;HABIGANJ  total price: 1153998.0 &lt;/div&gt;`)[0];
+                popup_a848c7ff482b82f0635560f8d68a2233.setContent(html_c76266a9d062e567ba94cb448c658875);
+            
+        
+
+        circle_marker_eddaab3fb314cf23847f78bec37a6333.bindPopup(popup_a848c7ff482b82f0635560f8d68a2233)
+        ;
+
+        
+    
+    
+            var circle_marker_864001174a4fb49f16656faec959381d = L.circleMarker(
+                [24.9270097, 89.94804200000002],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3.365866666666667, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_c08ef70203b3ac474b255d5010fd6ecd = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_424f3b216a188dc273ab9f5d17d55f40 = $(`&lt;div id=&quot;html_424f3b216a188dc273ab9f5d17d55f40&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;JAMALPUR  total price: 1009760.0 &lt;/div&gt;`)[0];
+                popup_c08ef70203b3ac474b255d5010fd6ecd.setContent(html_424f3b216a188dc273ab9f5d17d55f40);
+            
+        
+
+        circle_marker_864001174a4fb49f16656faec959381d.bindPopup(popup_c08ef70203b3ac474b255d5010fd6ecd)
+        ;
+
+        
+    
+    
+            var circle_marker_55b349963cc59ce3d5c6cf50660d4b4e = L.circleMarker(
+                [23.1640643, 89.20644999999999],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3.7753016666666666, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_a51bc2d0e968492e7fdb41eeebb7fd3e = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_b22b49f2701ba41b7d12eba0a8a5e7de = $(`&lt;div id=&quot;html_b22b49f2701ba41b7d12eba0a8a5e7de&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;JESSORE  total price: 1132590.5 &lt;/div&gt;`)[0];
+                popup_a51bc2d0e968492e7fdb41eeebb7fd3e.setContent(html_b22b49f2701ba41b7d12eba0a8a5e7de);
+            
+        
+
+        circle_marker_55b349963cc59ce3d5c6cf50660d4b4e.bindPopup(popup_a51bc2d0e968492e7fdb41eeebb7fd3e)
+        ;
+
+        
+    
+    
+            var circle_marker_7d7f15cb6d91d77c9ead97b62e148e14 = L.circleMarker(
+                [22.6411383, 90.1987003],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 1.9026908333333334, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_7861313a08537609a21a6d22ad238aea = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_3268f4097f869a4773eee0214c17276c = $(`&lt;div id=&quot;html_3268f4097f869a4773eee0214c17276c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;JHALOKATI  total price: 570807.25 &lt;/div&gt;`)[0];
+                popup_7861313a08537609a21a6d22ad238aea.setContent(html_3268f4097f869a4773eee0214c17276c);
+            
+        
+
+        circle_marker_7d7f15cb6d91d77c9ead97b62e148e14.bindPopup(popup_7861313a08537609a21a6d22ad238aea)
+        ;
+
+        
+    
+    
+            var circle_marker_677f7237519ebbe0cfd550c55ad14eac = L.circleMarker(
+                [23.5449979, 89.1726111],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.899970833333333, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_df5d64a888db95a92f1eec13d0d3d1f4 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_a5e42c66eaaf2db3c63e25d9e7aa9235 = $(`&lt;div id=&quot;html_a5e42c66eaaf2db3c63e25d9e7aa9235&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;JHENAIDAH  total price: 869991.25 &lt;/div&gt;`)[0];
+                popup_df5d64a888db95a92f1eec13d0d3d1f4.setContent(html_a5e42c66eaaf2db3c63e25d9e7aa9235);
+            
+        
+
+        circle_marker_677f7237519ebbe0cfd550c55ad14eac.bindPopup(popup_df5d64a888db95a92f1eec13d0d3d1f4)
+        ;
+
+        
+    
+    
+            var circle_marker_217f52d5c449f7d79d200c045bc2cd07 = L.circleMarker(
+                [25.0967735, 89.02271259999999],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.4512616666666664, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_55de728fe66e8a303d914cb08398f4ba = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_ab326a086c0feae4ba81781adf3a949b = $(`&lt;div id=&quot;html_ab326a086c0feae4ba81781adf3a949b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;JOYPURHAT  total price: 735378.5 &lt;/div&gt;`)[0];
+                popup_55de728fe66e8a303d914cb08398f4ba.setContent(html_ab326a086c0feae4ba81781adf3a949b);
+            
+        
+
+        circle_marker_217f52d5c449f7d79d200c045bc2cd07.bindPopup(popup_55de728fe66e8a303d914cb08398f4ba)
+        ;
+
+        
+    
+    
+            var circle_marker_e6a3673f89b4f45cce0c0e9da6b1681c = L.circleMarker(
+                [23.1137114, 91.9795001],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3.872405, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_178e5d31977896d50ddb4327c0aa633f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_666aae37924b8619878f2b007668e1a6 = $(`&lt;div id=&quot;html_666aae37924b8619878f2b007668e1a6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;KHAGRACHHARI  total price: 1161721.5 &lt;/div&gt;`)[0];
+                popup_178e5d31977896d50ddb4327c0aa633f.setContent(html_666aae37924b8619878f2b007668e1a6);
+            
+        
+
+        circle_marker_e6a3673f89b4f45cce0c0e9da6b1681c.bindPopup(popup_178e5d31977896d50ddb4327c0aa633f)
+        ;
+
+        
+    
+    
+            var circle_marker_0e3eb32b1b69c8538d5f12cab5fc9d3a = L.circleMarker(
+                [22.8373287, 89.54004719999999],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 13.604279166666666, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_01cbc31defd5218d3ee9c9cdacb84df7 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_ab8817cd6ab6712b2be7f208a488834c = $(`&lt;div id=&quot;html_ab8817cd6ab6712b2be7f208a488834c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;KHULNA  total price: 4081283.75 &lt;/div&gt;`)[0];
+                popup_01cbc31defd5218d3ee9c9cdacb84df7.setContent(html_ab8817cd6ab6712b2be7f208a488834c);
+            
+        
+
+        circle_marker_0e3eb32b1b69c8538d5f12cab5fc9d3a.bindPopup(popup_01cbc31defd5218d3ee9c9cdacb84df7)
+        ;
+
+        
+    
+    
+            var circle_marker_4282454e181c43b64b71e0ac88c8b03d = L.circleMarker(
+                [24.4336739, 90.7851766],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6.317985, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_e7b17aed5c4de65b61d77f690e12658d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_d55b4ee425c76e5ff1e4decbbbe6a4ea = $(`&lt;div id=&quot;html_d55b4ee425c76e5ff1e4decbbbe6a4ea&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;KISHOREGONJ  total price: 1895395.5 &lt;/div&gt;`)[0];
+                popup_e7b17aed5c4de65b61d77f690e12658d.setContent(html_d55b4ee425c76e5ff1e4decbbbe6a4ea);
+            
+        
+
+        circle_marker_4282454e181c43b64b71e0ac88c8b03d.bindPopup(popup_e7b17aed5c4de65b61d77f690e12658d)
+        ;
+
+        
+    
+    
+            var circle_marker_7d0c2044e152964828492ad24557d715 = L.circleMarker(
+                [25.8133074, 89.64828849999999],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 4.42419, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_d7e1fe8b22095e71887d283aefdebbe3 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_fe97561b8c1dd8d459b428ecac532d1c = $(`&lt;div id=&quot;html_fe97561b8c1dd8d459b428ecac532d1c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;KURIGRAM  total price: 1327257.0 &lt;/div&gt;`)[0];
+                popup_d7e1fe8b22095e71887d283aefdebbe3.setContent(html_fe97561b8c1dd8d459b428ecac532d1c);
+            
+        
+
+        circle_marker_7d0c2044e152964828492ad24557d715.bindPopup(popup_d7e1fe8b22095e71887d283aefdebbe3)
+        ;
+
+        
+    
+    
+            var circle_marker_1007830d42aed1df11a840c2314320f0 = L.circleMarker(
+                [23.9088541, 89.12218179999999],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.904135, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_3fed2283d2ca555db245873ad65edc34 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_0e46c2699a8d7be945226ad4c08da000 = $(`&lt;div id=&quot;html_0e46c2699a8d7be945226ad4c08da000&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;KUSHTIA  total price: 871240.5 &lt;/div&gt;`)[0];
+                popup_3fed2283d2ca555db245873ad65edc34.setContent(html_0e46c2699a8d7be945226ad4c08da000);
+            
+        
+
+        circle_marker_1007830d42aed1df11a840c2314320f0.bindPopup(popup_3fed2283d2ca555db245873ad65edc34)
+        ;
+
+        
+    
+    
+            var circle_marker_1aeca0eb373079e58936482e7afa67f2 = L.circleMarker(
+                [22.9454033, 90.8341624],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.4330308333333335, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_eefc985da456b27dc4fc2ea94cc54ed2 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_44f8bfd1633eba666398cc52ed949be6 = $(`&lt;div id=&quot;html_44f8bfd1633eba666398cc52ed949be6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;LAKSHMIPUR  total price: 729909.25 &lt;/div&gt;`)[0];
+                popup_eefc985da456b27dc4fc2ea94cc54ed2.setContent(html_44f8bfd1633eba666398cc52ed949be6);
+            
+        
+
+        circle_marker_1aeca0eb373079e58936482e7afa67f2.bindPopup(popup_eefc985da456b27dc4fc2ea94cc54ed2)
+        ;
+
+        
+    
+    
+            var circle_marker_f1daba6620dbd56d202b30fa5e3e7392 = L.circleMarker(
+                [25.916198, 89.45058019999999],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.44129, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_166e78c9d1bebdd33c48586cf94bf3da = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_97e753797240837372df2214df9cef57 = $(`&lt;div id=&quot;html_97e753797240837372df2214df9cef57&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;LALMONIRHAT  total price: 732387.0 &lt;/div&gt;`)[0];
+                popup_166e78c9d1bebdd33c48586cf94bf3da.setContent(html_97e753797240837372df2214df9cef57);
+            
+        
+
+        circle_marker_f1daba6620dbd56d202b30fa5e3e7392.bindPopup(popup_166e78c9d1bebdd33c48586cf94bf3da)
+        ;
+
+        
+    
+    
+            var circle_marker_94b21cf2f8747b96d4896071df0e26ce = L.circleMarker(
+                [23.1672303, 90.1949869],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.0051016666666666, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_88f0d2c6d172c3f01c8d61e0bcf2dfa6 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_b055cf3f5e59e5e6e8ec3e05d534bb34 = $(`&lt;div id=&quot;html_b055cf3f5e59e5e6e8ec3e05d534bb34&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;MADARIPUR  total price: 601530.5 &lt;/div&gt;`)[0];
+                popup_88f0d2c6d172c3f01c8d61e0bcf2dfa6.setContent(html_b055cf3f5e59e5e6e8ec3e05d534bb34);
+            
+        
+
+        circle_marker_94b21cf2f8747b96d4896071df0e26ce.bindPopup(popup_88f0d2c6d172c3f01c8d61e0bcf2dfa6)
+        ;
+
+        
+    
+    
+            var circle_marker_5f65d646c34407d30684ecdfefe55b1f = L.circleMarker(
+                [23.8610911, 90.00043769999999],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3.3265666666666664, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_d8a9ed35958cbc17afe7f31cd125890f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_d782211850ee07a1d6bb32610acd0e24 = $(`&lt;div id=&quot;html_d782211850ee07a1d6bb32610acd0e24&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;MANIKGANJ  total price: 997970.0 &lt;/div&gt;`)[0];
+                popup_d8a9ed35958cbc17afe7f31cd125890f.setContent(html_d782211850ee07a1d6bb32610acd0e24);
+            
+        
+
+        circle_marker_5f65d646c34407d30684ecdfefe55b1f.bindPopup(popup_d8a9ed35958cbc17afe7f31cd125890f)
+        ;
+
+        
+    
+    
+            var circle_marker_ef99d8aa8d5ae09a5aa05580978ff361 = L.circleMarker(
+                [24.485853, 91.7764601],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3.4558166666666668, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_b4eae03908f08fdd94fa7cc9b45b1204 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_02cfc29b1415c1844dba053de23816c2 = $(`&lt;div id=&quot;html_02cfc29b1415c1844dba053de23816c2&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;MAULVIBAZAR  total price: 1036745.0 &lt;/div&gt;`)[0];
+                popup_b4eae03908f08fdd94fa7cc9b45b1204.setContent(html_02cfc29b1415c1844dba053de23816c2);
+            
+        
+
+        circle_marker_ef99d8aa8d5ae09a5aa05580978ff361.bindPopup(popup_b4eae03908f08fdd94fa7cc9b45b1204)
+        ;
+
+        
+    
+    
+            var circle_marker_e22ea8217f438f27b39d4d6871486772 = L.circleMarker(
+                [23.7782629, 88.6313917],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 1.45585, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_b5087aba14a931203def3650836b68ae = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_3724d0a72017ab631b1d83e819e9a274 = $(`&lt;div id=&quot;html_3724d0a72017ab631b1d83e819e9a274&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;MEHERPUR  total price: 436755.0 &lt;/div&gt;`)[0];
+                popup_b5087aba14a931203def3650836b68ae.setContent(html_3724d0a72017ab631b1d83e819e9a274);
+            
+        
+
+        circle_marker_e22ea8217f438f27b39d4d6871486772.bindPopup(popup_b5087aba14a931203def3650836b68ae)
+        ;
+
+        
+    
+    
+            var circle_marker_cb7662d08538c93764860735b3343c68 = L.circleMarker(
+                [23.5449195, 90.5296275],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.8887708333333335, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_e53dfed9eaed4bcc8e42f4522791b221 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_904eb681261af44b3c51dbde95d0c466 = $(`&lt;div id=&quot;html_904eb681261af44b3c51dbde95d0c466&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;MUNSHIGANJ  total price: 866631.25 &lt;/div&gt;`)[0];
+                popup_e53dfed9eaed4bcc8e42f4522791b221.setContent(html_904eb681261af44b3c51dbde95d0c466);
+            
+        
+
+        circle_marker_cb7662d08538c93764860735b3343c68.bindPopup(popup_e53dfed9eaed4bcc8e42f4522791b221)
+        ;
+
+        
+    
+    
+            var circle_marker_6d8ed70117d9ca90266d3c14a86edfee = L.circleMarker(
+                [24.7459528, 90.417854],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 6.2841016666666665, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_4ed7187781c42d97d89f34f4335bfd42 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_c3bbd72383de89489905229fdc7d4af5 = $(`&lt;div id=&quot;html_c3bbd72383de89489905229fdc7d4af5&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;MYMENSINGH  total price: 1885230.5 &lt;/div&gt;`)[0];
+                popup_4ed7187781c42d97d89f34f4335bfd42.setContent(html_c3bbd72383de89489905229fdc7d4af5);
+            
+        
+
+        circle_marker_6d8ed70117d9ca90266d3c14a86edfee.bindPopup(popup_4ed7187781c42d97d89f34f4335bfd42)
+        ;
+
+        
+    
+    
+            var circle_marker_7db2773c37286e558545e31db18ad8b8 = L.circleMarker(
+                [24.8061878, 88.93473780000001],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5.2171575, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_f5599bc8d82c7e39014eae9351001fbb = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_b11c969b3e662695385b9dcdb209ec70 = $(`&lt;div id=&quot;html_b11c969b3e662695385b9dcdb209ec70&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;NAOGAON  total price: 1565147.25 &lt;/div&gt;`)[0];
+                popup_f5599bc8d82c7e39014eae9351001fbb.setContent(html_b11c969b3e662695385b9dcdb209ec70);
+            
+        
+
+        circle_marker_7db2773c37286e558545e31db18ad8b8.bindPopup(popup_f5599bc8d82c7e39014eae9351001fbb)
+        ;
+
+        
+    
+    
+            var circle_marker_8c9399615a7a56972974d43737db03cb = L.circleMarker(
+                [23.1733806, 89.5004273],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 1.4689958333333333, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_0c05d3575f4d3cda843f139facb1ba14 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_4215f725b6478a0439b11c9ec4ea5346 = $(`&lt;div id=&quot;html_4215f725b6478a0439b11c9ec4ea5346&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;NARAIL  total price: 440698.75 &lt;/div&gt;`)[0];
+                popup_0c05d3575f4d3cda843f139facb1ba14.setContent(html_4215f725b6478a0439b11c9ec4ea5346);
+            
+        
+
+        circle_marker_8c9399615a7a56972974d43737db03cb.bindPopup(popup_0c05d3575f4d3cda843f139facb1ba14)
+        ;
+
+        
+    
+    
+            var circle_marker_76a2f4dbe605d6c427c0c019156733f2 = L.circleMarker(
+                [23.642881, 90.488286],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.445155, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_c844fc843c5c4604a001c40607bc60c1 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_c8e8c2430399d733029eb02bcc4dccf6 = $(`&lt;div id=&quot;html_c8e8c2430399d733029eb02bcc4dccf6&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;NARAYANGANJ  total price: 733546.5 &lt;/div&gt;`)[0];
+                popup_c844fc843c5c4604a001c40607bc60c1.setContent(html_c8e8c2430399d733029eb02bcc4dccf6);
+            
+        
+
+        circle_marker_76a2f4dbe605d6c427c0c019156733f2.bindPopup(popup_c844fc843c5c4604a001c40607bc60c1)
+        ;
+
+        
+    
+    
+            var circle_marker_a261d7247a31a48b5bcab16681634d0e = L.circleMarker(
+                [23.9350039, 90.72339610000002],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.9528825, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_c662b705de340bd8f2acaf38e39abe18 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_cf6e26c6e7ce974655a26a9ef036427b = $(`&lt;div id=&quot;html_cf6e26c6e7ce974655a26a9ef036427b&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;NARSINGDI  total price: 885864.75 &lt;/div&gt;`)[0];
+                popup_c662b705de340bd8f2acaf38e39abe18.setContent(html_cf6e26c6e7ce974655a26a9ef036427b);
+            
+        
+
+        circle_marker_a261d7247a31a48b5bcab16681634d0e.bindPopup(popup_c662b705de340bd8f2acaf38e39abe18)
+        ;
+
+        
+    
+    
+            var circle_marker_519ef76c49a737e8490890f719375feb = L.circleMarker(
+                [24.4123751, 88.97562239999999],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3.34904, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_4a53a59d20c2a0dc5827ab7a48054f16 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_fbc44a38edf89cd8cdf02610366ef230 = $(`&lt;div id=&quot;html_fbc44a38edf89cd8cdf02610366ef230&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;NATORE  total price: 1004712.0 &lt;/div&gt;`)[0];
+                popup_4a53a59d20c2a0dc5827ab7a48054f16.setContent(html_fbc44a38edf89cd8cdf02610366ef230);
+            
+        
+
+        circle_marker_519ef76c49a737e8490890f719375feb.bindPopup(popup_4a53a59d20c2a0dc5827ab7a48054f16)
+        ;
+
+        
+    
+    
+            var circle_marker_c929cb535f60b0cdd1b9f4d39d72a505 = L.circleMarker(
+                [24.8820862, 90.723087],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 4.832553333333333, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_656c4e4e4c2df052d93ddd1bd784ee29 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_7035ec619fe49df363dbe1e7cdbaf387 = $(`&lt;div id=&quot;html_7035ec619fe49df363dbe1e7cdbaf387&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;NETRAKONA  total price: 1449766.0 &lt;/div&gt;`)[0];
+                popup_656c4e4e4c2df052d93ddd1bd784ee29.setContent(html_7035ec619fe49df363dbe1e7cdbaf387);
+            
+        
+
+        circle_marker_c929cb535f60b0cdd1b9f4d39d72a505.bindPopup(popup_656c4e4e4c2df052d93ddd1bd784ee29)
+        ;
+
+        
+    
+    
+            var circle_marker_55d4ce8a39a4cc1fe35eec6923ab5bd6 = L.circleMarker(
+                [25.9362732, 88.8407037],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.8759158333333334, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_803567c5fd353216017bf9636086fc97 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_1130c67004a4b78d78b42f2877427ff3 = $(`&lt;div id=&quot;html_1130c67004a4b78d78b42f2877427ff3&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;NILPHAMARI  total price: 862774.75 &lt;/div&gt;`)[0];
+                popup_803567c5fd353216017bf9636086fc97.setContent(html_1130c67004a4b78d78b42f2877427ff3);
+            
+        
+
+        circle_marker_55d4ce8a39a4cc1fe35eec6923ab5bd6.bindPopup(popup_803567c5fd353216017bf9636086fc97)
+        ;
+
+        
+    
+    
+            var circle_marker_f0797e74e24fbdb8f0d38feae099db25 = L.circleMarker(
+                [22.8652943, 91.0970586],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 4.403955833333334, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_1f4bacc9343d2dda4aea30c7182fb0cf = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_ed9c0784c5be7fa5315ff8dba47cc152 = $(`&lt;div id=&quot;html_ed9c0784c5be7fa5315ff8dba47cc152&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;NOAKHALI  total price: 1321186.75 &lt;/div&gt;`)[0];
+                popup_1f4bacc9343d2dda4aea30c7182fb0cf.setContent(html_ed9c0784c5be7fa5315ff8dba47cc152);
+            
+        
+
+        circle_marker_f0797e74e24fbdb8f0d38feae099db25.bindPopup(popup_1f4bacc9343d2dda4aea30c7182fb0cf)
+        ;
+
+        
+    
+    
+            var circle_marker_f3f8d41c67e1a847cab4e863e42abff1 = L.circleMarker(
+                [24.012203, 89.2467613],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 4.2883425, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_fae7a922fbfcd45058c0d22cf7f76b9c = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_9f7267bd9b5af828beca9e7d16efd2ce = $(`&lt;div id=&quot;html_9f7267bd9b5af828beca9e7d16efd2ce&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;PABNA  total price: 1286502.75 &lt;/div&gt;`)[0];
+                popup_fae7a922fbfcd45058c0d22cf7f76b9c.setContent(html_9f7267bd9b5af828beca9e7d16efd2ce);
+            
+        
+
+        circle_marker_f3f8d41c67e1a847cab4e863e42abff1.bindPopup(popup_fae7a922fbfcd45058c0d22cf7f76b9c)
+        ;
+
+        
+    
+    
+            var circle_marker_675696eaaf2e41e4616b7707eb5e8ddf = L.circleMarker(
+                [26.335376, 88.551698],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.4559241666666667, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_d264853f00d6e44a86d3fe6d5c03d572 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_dc420d544a4771aa5149d6e795e4bb5e = $(`&lt;div id=&quot;html_dc420d544a4771aa5149d6e795e4bb5e&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;PANCHAGARH  total price: 736777.25 &lt;/div&gt;`)[0];
+                popup_d264853f00d6e44a86d3fe6d5c03d572.setContent(html_dc420d544a4771aa5149d6e795e4bb5e);
+            
+        
+
+        circle_marker_675696eaaf2e41e4616b7707eb5e8ddf.bindPopup(popup_d264853f00d6e44a86d3fe6d5c03d572)
+        ;
+
+        
+    
+    
+            var circle_marker_15f58cbf82900736ac7031dbd1d0d231 = L.circleMarker(
+                [22.3589237, 90.3280132],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3.8420966666666665, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_286f3fbe701c7cee8fa0a6a87b439160 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_cdbaeb05497b546a64019d2217dbff90 = $(`&lt;div id=&quot;html_cdbaeb05497b546a64019d2217dbff90&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;PATUAKHALI  total price: 1152629.0 &lt;/div&gt;`)[0];
+                popup_286f3fbe701c7cee8fa0a6a87b439160.setContent(html_cdbaeb05497b546a64019d2217dbff90);
+            
+        
+
+        circle_marker_15f58cbf82900736ac7031dbd1d0d231.bindPopup(popup_286f3fbe701c7cee8fa0a6a87b439160)
+        ;
+
+        
+    
+    
+            var circle_marker_df6aef85e47e11bc6276943be8d99ee2 = L.circleMarker(
+                [22.5841051, 89.9720133],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3.3947433333333334, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_bbc1c92d2faa1eaa21cf533a5d0dc580 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_b7be25345eb1ce1163e575bf858f67d8 = $(`&lt;div id=&quot;html_b7be25345eb1ce1163e575bf858f67d8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;PIROJPUR  total price: 1018423.0 &lt;/div&gt;`)[0];
+                popup_bbc1c92d2faa1eaa21cf533a5d0dc580.setContent(html_b7be25345eb1ce1163e575bf858f67d8);
+            
+        
+
+        circle_marker_df6aef85e47e11bc6276943be8d99ee2.bindPopup(popup_bbc1c92d2faa1eaa21cf533a5d0dc580)
+        ;
+
+        
+    
+    
+            var circle_marker_d7b99f5e77f366c9f8a2a82787420620 = L.circleMarker(
+                [23.7527483, 89.6446247],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.4546433333333333, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_e74dc316dcc5880d82dc116632df7f8d = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_a2094e7d688ffbc93a3df53ec80e01a8 = $(`&lt;div id=&quot;html_a2094e7d688ffbc93a3df53ec80e01a8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;RAJBARI  total price: 736393.0 &lt;/div&gt;`)[0];
+                popup_e74dc316dcc5880d82dc116632df7f8d.setContent(html_a2094e7d688ffbc93a3df53ec80e01a8);
+            
+        
+
+        circle_marker_d7b99f5e77f366c9f8a2a82787420620.bindPopup(popup_e74dc316dcc5880d82dc116632df7f8d)
+        ;
+
+        
+    
+    
+            var circle_marker_03a96ad73dddb02dc5b0b7042c245853 = L.circleMarker(
+                [24.3746497, 88.60036649999999],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 12.521515, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_38da21f5b5a413fa96449916fe81a6de = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_578f56146e465eca330bcb179428bece = $(`&lt;div id=&quot;html_578f56146e465eca330bcb179428bece&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;RAJSHAHI  total price: 3756454.5 &lt;/div&gt;`)[0];
+                popup_38da21f5b5a413fa96449916fe81a6de.setContent(html_578f56146e465eca330bcb179428bece);
+            
+        
+
+        circle_marker_03a96ad73dddb02dc5b0b7042c245853.bindPopup(popup_38da21f5b5a413fa96449916fe81a6de)
+        ;
+
+        
+    
+    
+            var circle_marker_087fc90b2bfae576b1d216a875a94b0c = L.circleMarker(
+                [22.6619561, 92.1611123],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 4.8600658333333335, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_b84c81aa577f2a28feaa440d94c40a16 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_b39a489075886f0f74123dc353c91245 = $(`&lt;div id=&quot;html_b39a489075886f0f74123dc353c91245&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;RANGAMATI  total price: 1458019.75 &lt;/div&gt;`)[0];
+                popup_b84c81aa577f2a28feaa440d94c40a16.setContent(html_b39a489075886f0f74123dc353c91245);
+            
+        
+
+        circle_marker_087fc90b2bfae576b1d216a875a94b0c.bindPopup(popup_b84c81aa577f2a28feaa440d94c40a16)
+        ;
+
+        
+    
+    
+            var circle_marker_e48e9560c69e8554201681eabb7a19d4 = L.circleMarker(
+                [25.7493938, 89.26108649999999],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3.9087425, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_409927a66513bc84580883ed8ad51e3b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_9a6dcaf78000a14ff33487a7121bfaf4 = $(`&lt;div id=&quot;html_9a6dcaf78000a14ff33487a7121bfaf4&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;RANGPUR  total price: 1172622.75 &lt;/div&gt;`)[0];
+                popup_409927a66513bc84580883ed8ad51e3b.setContent(html_9a6dcaf78000a14ff33487a7121bfaf4);
+            
+        
+
+        circle_marker_e48e9560c69e8554201681eabb7a19d4.bindPopup(popup_409927a66513bc84580883ed8ad51e3b)
+        ;
+
+        
+    
+    
+            var circle_marker_b7380d0c0d6c8221c0e96f1be143a8e8 = L.circleMarker(
+                [22.7216954, 89.06820549999999],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 3.433155833333333, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_fdafb8779a48eff2089727f577d2d546 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_2ce3edcecb7da8e48384813ea16a4e3c = $(`&lt;div id=&quot;html_2ce3edcecb7da8e48384813ea16a4e3c&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;SATKHIRA  total price: 1029946.75 &lt;/div&gt;`)[0];
+                popup_fdafb8779a48eff2089727f577d2d546.setContent(html_2ce3edcecb7da8e48384813ea16a4e3c);
+            
+        
+
+        circle_marker_b7380d0c0d6c8221c0e96f1be143a8e8.bindPopup(popup_fdafb8779a48eff2089727f577d2d546)
+        ;
+
+        
+    
+    
+            var circle_marker_0c47626ad45b00a5557131fe4043163a = L.circleMarker(
+                [23.2197029, 90.3501258],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.8518858333333332, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_03329a222ea73b5d44cacdfd0e8f49bd = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_3af8f5ec2b77d99adb113d43c1f28188 = $(`&lt;div id=&quot;html_3af8f5ec2b77d99adb113d43c1f28188&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;SHARIATPUR  total price: 855565.75 &lt;/div&gt;`)[0];
+                popup_03329a222ea73b5d44cacdfd0e8f49bd.setContent(html_3af8f5ec2b77d99adb113d43c1f28188);
+            
+        
+
+        circle_marker_0c47626ad45b00a5557131fe4043163a.bindPopup(popup_03329a222ea73b5d44cacdfd0e8f49bd)
+        ;
+
+        
+    
+    
+            var circle_marker_1865698ae22815666343e3a197994c0f = L.circleMarker(
+                [25.0201511, 90.01740509999999],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.4457066666666667, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_3aee1a9e4846224022cabc27e502692b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_9e93026af9a0a5dcb7b0fc05b9186bc8 = $(`&lt;div id=&quot;html_9e93026af9a0a5dcb7b0fc05b9186bc8&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;SHERPUR  total price: 733712.0 &lt;/div&gt;`)[0];
+                popup_3aee1a9e4846224022cabc27e502692b.setContent(html_9e93026af9a0a5dcb7b0fc05b9186bc8);
+            
+        
+
+        circle_marker_1865698ae22815666343e3a197994c0f.bindPopup(popup_3aee1a9e4846224022cabc27e502692b)
+        ;
+
+        
+    
+    
+            var circle_marker_6099552ad9795454f071451e136ae09a = L.circleMarker(
+                [24.4615545, 89.7053442],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 4.3170025, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_0354d4effacb592cb182698480b3285f = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_612853926937395b174418eefd83bcff = $(`&lt;div id=&quot;html_612853926937395b174418eefd83bcff&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;SIRAJGANJ  total price: 1295100.75 &lt;/div&gt;`)[0];
+                popup_0354d4effacb592cb182698480b3285f.setContent(html_612853926937395b174418eefd83bcff);
+            
+        
+
+        circle_marker_6099552ad9795454f071451e136ae09a.bindPopup(popup_0354d4effacb592cb182698480b3285f)
+        ;
+
+        
+    
+    
+            var circle_marker_900d5390fef8e28311b6843ea74956f6 = L.circleMarker(
+                [25.0666548, 91.4072392],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5.31258, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_609184c84577fb39aa20f1df8edcfc8b = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_12952b279e1c91bcb42eac1248b4d143 = $(`&lt;div id=&quot;html_12952b279e1c91bcb42eac1248b4d143&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;SUNAMGANJ  total price: 1593774.0 &lt;/div&gt;`)[0];
+                popup_609184c84577fb39aa20f1df8edcfc8b.setContent(html_12952b279e1c91bcb42eac1248b4d143);
+            
+        
+
+        circle_marker_900d5390fef8e28311b6843ea74956f6.bindPopup(popup_609184c84577fb39aa20f1df8edcfc8b)
+        ;
+
+        
+    
+    
+            var circle_marker_2869317dd6774edfdb784064dcb016dd = L.circleMarker(
+                [24.9047808, 91.8600079],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5.7590575, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_6f64c644c7a301c19d9472cee0b1a378 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_81506da1ba0d2c874464ea26f5122c0a = $(`&lt;div id=&quot;html_81506da1ba0d2c874464ea26f5122c0a&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;SYLHET  total price: 1727717.25 &lt;/div&gt;`)[0];
+                popup_6f64c644c7a301c19d9472cee0b1a378.setContent(html_81506da1ba0d2c874464ea26f5122c0a);
+            
+        
+
+        circle_marker_2869317dd6774edfdb784064dcb016dd.bindPopup(popup_6f64c644c7a301c19d9472cee0b1a378)
+        ;
+
+        
+    
+    
+            var circle_marker_2a3dfd8936f5d722efe45a2bfb045d5f = L.circleMarker(
+                [24.2514853, 89.9198043],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 5.915500833333334, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_648e0128e76d0d1db438ebc8d13eacc0 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_4db5517ef7d12b96f87e96c5c28f5545 = $(`&lt;div id=&quot;html_4db5517ef7d12b96f87e96c5c28f5545&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;TANGAIL  total price: 1774650.25 &lt;/div&gt;`)[0];
+                popup_648e0128e76d0d1db438ebc8d13eacc0.setContent(html_4db5517ef7d12b96f87e96c5c28f5545);
+            
+        
+
+        circle_marker_2a3dfd8936f5d722efe45a2bfb045d5f.bindPopup(popup_648e0128e76d0d1db438ebc8d13eacc0)
+        ;
+
+        
+    
+    
+            var circle_marker_8c039177773aff75442dbd1fd638b392 = L.circleMarker(
+                [26.0273645, 88.4646107],
+                {&quot;bubblingMouseEvents&quot;: true, &quot;color&quot;: &quot;red&quot;, &quot;dashArray&quot;: null, &quot;dashOffset&quot;: null, &quot;fill&quot;: true, &quot;fillColor&quot;: &quot;red&quot;, &quot;fillOpacity&quot;: 0.2, &quot;fillRule&quot;: &quot;evenodd&quot;, &quot;lineCap&quot;: &quot;round&quot;, &quot;lineJoin&quot;: &quot;round&quot;, &quot;opacity&quot;: 1.0, &quot;radius&quot;: 2.4331141666666665, &quot;stroke&quot;: true, &quot;weight&quot;: 3}
+            ).addTo(map_88f3817a847825919d6786e34dac8f5b);
+        
+    
+        var popup_1a0ad8a923c0e23a306e31a95590a9f7 = L.popup({&quot;maxWidth&quot;: &quot;100%&quot;});
+
+        
+            
+                var html_c297820a92245e4e2184b28b256c8619 = $(`&lt;div id=&quot;html_c297820a92245e4e2184b28b256c8619&quot; style=&quot;width: 100.0%; height: 100.0%;&quot;&gt;THAKURGAON  total price: 729934.25 &lt;/div&gt;`)[0];
+                popup_1a0ad8a923c0e23a306e31a95590a9f7.setContent(html_c297820a92245e4e2184b28b256c8619);
+            
+        
+
+        circle_marker_8c039177773aff75442dbd1fd638b392.bindPopup(popup_1a0ad8a923c0e23a306e31a95590a9f7)
+        ;
+
+        
+    
+&lt;/script&gt;
+&lt;/html&gt;" style="position:absolute;width:100%;height:100%;left:0;top:0;border:none !important;" allowfullscreen webkitallowfullscreen mozallowfullscreen></iframe></div></div>
